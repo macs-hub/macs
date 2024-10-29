@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Menu -->
+    <nav>
+        <ul class="main-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Homepage Section -->
+    <section id="home" class="section">
+        <h1>Welcome to Barangay<br> <em>Malinao</em></h1>
+        <p>Welcome to our official barangay website. We are committed to providing excellent services to our community.</p>
+        <button id="subscribeBtn">Subscribe to Newsletter</button>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Waste Management</li>
+            <li>Public Safety</li>
+            <li>Community Health</li>
+            <li>Infrastructure Development</li>
+        </ul>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Barangay Malinao is dedicated to enhancing the quality of life for all our residents through various programs and initiatives.</p>
+    </section>
+    <style>
+        body {
+          background-color: lightblue;
+        }
+      </style>
+    <!-- Newsletter Pop-up -->
+    <div id="newsletterPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Subscribe to Our Newsletter</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <style>
+        body {
+          background-image: url('hall.jpg'); /* Your image path */
+          background-size: cover; /* Ensures the image covers the entire page */
+          background-position: center; /* Centers the image */
+          background-repeat: no-repeat; /* Prevents the image from repeating */
+          background-attachment: fixed; /* Keeps the background fixed during scrolling */
+          height: 100vh; /* Ensures the height is 100% of the viewport */
+          margin: 0; /* Removes default margin on the body element */
+        }
+      </style>
+      
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
